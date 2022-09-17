@@ -1,1 +1,187 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Lisa Ho's Portfolio Website</title>
+    <meta content="Lisa Ho's Portfolio" name="description">
+    <meta content="Lisa Ho Yen Xin Portfolio" name="keywords">
+
+
+    <!-- Vendor CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+    <style>
+        .project-subtitle {
+            font-family: 'Hind';
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <nav class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+                    <li><a class="nav-link scrollto" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link scrollto" href="#work">WORK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="hero-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <!--<p class="display-6 color-d">Hello, world!</p>-->
+                    <h1 class="hero-title mb-4">I am Lisa Ho</h1>
+                    <p class="hero-subtitle"><span class="typed"
+                            data-typed-items="Programmer, Web Developer, Freelancer, "></span></p>
+                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Content -->
+    <section style="margin-top: 50px">
+        <div class="container">
+            <h1>Recent Works</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="project-card" class="card1">
+                        <div class="project-title">Library Management System Website</div>
+                        <div class="project-subtitle">Group Project &bull; 2022</div>
+                        <div class="language-icons">
+                            <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                            <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                            <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+                            <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
+                            <img alt="MYSQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
+                        </div>
+                        <div class="description">
+                            <p>An interactive website application that interacts with a dataset in a MySQL database.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="project-card" class="card2">
+                        <div class="project-title">Proactive Social Distancing App</div>
+                        <div class="project-subtitle">Personal Project &bull; 2022</div>
+                        <div class="language-icons">
+                            <img alt="Java"
+                                src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+                        </div>
+                        <div class="description">
+                            <p>A Java application that ensures proactive social distancing by taking into account a location’s maximum capacity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="project-card" class="card3 card d-flex position-relative flex-column">
+                        <div class="project-title">E-commerce Website</div>
+                        <div class="project-subtitle">Group Project &bull; 2020</div>
+                        <div class="language-icons">
+                            <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                            <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                            <img alt="JavaScript"
+                                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+                        </div>
+                        <div class="description">
+                            <p>A group website project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="project-card" class="card4">
+                        <div class="project-title">ATM Transaction Application</div>
+                        <div class="project-subtitle">Personal Project &bull; 2020</div>
+                        <div class="language-icons">
+                            <img alt="C++"
+                                src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                        </div>
+                        <div class="description">
+                            <p>A C++ program to display an ATM transaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 50px">
+        <div class="container">
+            <h1>Organized Events</h1>
+            <div class="row">
+                <div class="col-sm-4 mx-auto">
+                    <div id="project-card" class="card4">
+                        <div class="project-title">UNM Virtual Summer Camp</div>
+                        <div class="project-subtitle">Project Team &bull; 2022</div>
+                        <div class="language-icons">
+                            <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                            <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                            <img alt="Figma"
+                                src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+                            <img alt="MicrosoftOffice" src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mx-auto">
+                    <div id="project-card" class="card5">
+                        <div class="project-title">UNM CS Induction Day</div>
+                        <div class="project-subtitle">Activity Team</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 50px">
+        <div class="container">
+            <h1>Hackathons</h1>
+            <div class="row">
+                <div class="col-sm-4 mx-auto">
+                    <div id="project-card" class="card5">
+                        <div class="project-title">DHL MDashHack 2022</div>
+                        <div class="project-subtitle">Hackathon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <p><small>Copyright © 2022 Lisa Ho<sup>®</sup></small></p>
+</footer>
