@@ -12,11 +12,18 @@
 
     <!-- Vendor CSS Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="css/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Vendor JS Files -->
+    <script src="css/typed.min.js"></script>
+
     <!-- Icons -->
+    <script src="https://kit.fontawesome.com/435d1af65b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <!-- Fonts -->
@@ -34,6 +41,9 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">Lisa Ho</a></h1>
+
             <nav class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
@@ -57,21 +67,48 @@
         });
     </script>
 
-    <!-- ======= Hero Section ======= -->
-    <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-        <div class="overlay-itro"></div>
-        <div class="hero-content display-table">
-            <div class="table-cell">
-                <div class="container">
-                    <!--<p class="display-6 color-d">Hello, world!</p>-->
-                    <h1 class="hero-title mb-4">I am Lisa Ho</h1>
-                    <p class="hero-subtitle"><span class="typed"
-                            data-typed-items="Programmer, Web Developer, Freelancer, "></span></p>
-                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-                </div>
+    <!-- ======= Profile Section ======= -->
+    <section class="frame">
+        <div class="profile">
+            <h1 class="name">Lisa Ho</h1>
+            <img src="images/profile-pic.jpg" alt="Lisa Ho">
+            <p class="job">
+                <span class="text-slider"></span>
+                <span class="text-slider-items">
+                    Programmer, Front-end Developer, Freelancer</span>
+            </p>
+            <p><i class="fa-solid fa-envelope"></i><a href="mailto:lisahoyenxin@gmail.com">lisahoyenxin@gmail.com</a></p>
+            <p><i class="fa-solid fa-graduation-cap"></i>University of Nottingham</p>
+            <p><i class="fa-solid fa-location-dot"></i>Selangor, Malaysia</p>
+
+            <div class="links">
+                <!-- GITHUB -->
+                <p><a href="https://github.com/lisahyx" target="_blank"><i class="fa fa-2x fa-github"></i></a></p>
+                <!-- LINKEDIN -->
+                <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Vendor JS Files -->
+    <script src="css/typed.min.js"></script>
+    
+    <!-- Add jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    
+    <script>
+        var typed_strings =
+            $(".text-slider-items").text();
+
+        var typed = new Typed(".text-slider", {
+            strings: typed_strings.split(", "),
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000
+        });
+    </script>
     <!-- End Hero Section -->
 
     <!-- Content -->
@@ -109,7 +146,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div id="project-card" class="card3 card d-flex position-relative flex-column">
+                    <div id="project-card" class="card3">
                         <div class="project-title">E-commerce Website</div>
                         <div class="project-subtitle">Group Project &bull; 2020</div>
                         <div class="language-icons">
@@ -119,7 +156,7 @@
                                 src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
                         </div>
                         <div class="description">
-                            <p>A group website project.</p>
+                            <p>A group website project that sells clothes.</p>
                         </div>
                     </div>
                 </div>
@@ -185,3 +222,6 @@
 <footer>
     <p><small>Copyright © 2022 Lisa Ho<sup>®</sup></small></p>
 </footer>
+
+<!-- Template Main JS File -->
+<script src="css/main.js"></script>
