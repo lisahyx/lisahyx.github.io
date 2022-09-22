@@ -44,11 +44,12 @@
 
             <h1 class="logo"><a href="index.html">Lisa Ho</a></h1>
 
-            <nav class="navbar">
+            <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
-                    <li><a class="nav-link scrollto" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link scrollto active" href="#frame">ABOUT</a></li>
                     <li><a class="nav-link scrollto" href="#work">WORK</a></li>
+                    <li><a class="nav-link scrollto" href="#event">EVENTS</a></li>
+                    <li><a class="nav-link scrollto" href="#hackathon">HACKATHONS</a></li>
                 </ul>
             </nav>
         </div>
@@ -68,23 +69,24 @@
     </script>
 
     <!-- ======= Profile Section ======= -->
-    <section class="frame">
+    <section id="frame">
         <div class="profile">
             <h1 class="name">Lisa Ho</h1>
-            <img src="images/profile-pic.jpg" alt="Lisa Ho">
+            <!-- <img src="images/profile-pic.jpg" alt="Lisa Ho"> -->
+            <embed type="image/jpg"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=lisahyx&langs_count=10&layout=compact"
+                width="320" height="220">
             <p class="job">
                 <span class="text-slider"></span>
                 <span class="text-slider-items">
-                    Programmer, Front-end Developer, Freelancer</span>
+                    Programmer, Frontend Developer, Freelancer</span>
             </p>
             <p><i class="fa-solid fa-envelope"></i><a href="mailto:lisahoyenxin@gmail.com">lisahoyenxin@gmail.com</a></p>
             <p><i class="fa-solid fa-graduation-cap"></i>University of Nottingham</p>
             <p><i class="fa-solid fa-location-dot"></i>Selangor, Malaysia</p>
 
             <div class="links">
-                <!-- GITHUB -->
-                <p><a href="https://github.com/lisahyx" target="_blank"><i class="fa fa-2x fa-github"></i></a></p>
-                <!-- LINKEDIN -->
+                <a href="https://github.com/lisahyx" target="_blank"><i class="fa fa-github"></i></a>
                 <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
@@ -109,10 +111,10 @@
             backDelay: 2000
         });
     </script>
-    <!-- End Hero Section -->
+    <!-- End Profile Section -->
 
     <!-- Content -->
-    <section style="margin-top: 50px">
+    <section id="work" style="margin-top: 50px">
         <div class="container">
             <h1>Recent Works</h1>
             <div class="row">
@@ -178,7 +180,7 @@
             </div>
         </div>
     </section>
-    <section style="margin-top: 50px">
+    <section id="event" style="margin-top: 50px">
         <div class="container">
             <h1>Organized Events</h1>
             <div class="row">
@@ -204,7 +206,7 @@
             </div>
         </div>
     </section>
-    <section style="margin-top: 50px">
+    <section id="hackathon" style="margin-top: 50px">
         <div class="container">
             <h1>Hackathons</h1>
             <div class="row">
