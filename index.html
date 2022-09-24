@@ -55,27 +55,13 @@
         </div>
     </header>
     <!-- End Header -->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
 
     <!-- ======= Profile Section ======= -->
     <section id="frame">
         <div class="profile">
             <h1 class="name">Lisa Ho</h1>
             <!-- <img src="images/profile-pic.jpg" alt="Lisa Ho"> -->
-            <embed type="image/jpg"
-                src="https://github-readme-stats.vercel.app/api/top-langs?username=lisahyx&langs_count=10&layout=compact"
-                width="320" height="220">
+            
             <p class="job">
                 <span class="text-slider"></span>
                 <span class="text-slider-items">
@@ -84,6 +70,14 @@
             <p><i class="fa-solid fa-envelope"></i><a href="mailto:lisahoyenxin@gmail.com">lisahoyenxin@gmail.com</a></p>
             <p><i class="fa-solid fa-graduation-cap"></i>University of Nottingham</p>
             <p><i class="fa-solid fa-location-dot"></i>Selangor, Malaysia</p>
+
+            <div class="about">
+                <embed type="image/jpg"
+                    src="https://github-readme-stats.vercel.app/api/top-langs?username=lisahyx&langs_count=10&layout=compact"
+                    width="300" height="200">
+                    
+                <p>An aspiring student majoring in Computer Science with Artificial Intelligence.</p>
+            </div>
 
             <div class="links">
                 <a href="https://github.com/lisahyx" target="_blank"><i class="fa fa-github"></i></a>
@@ -114,7 +108,7 @@
     <!-- End Profile Section -->
 
     <!-- Content -->
-    <section id="work" style="margin-top: 50px">
+    <section id="work">
         <div class="container">
             <h1>Recent Works</h1>
             <div class="row">
@@ -148,19 +142,21 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div id="project-card" class="card3">
-                        <div class="project-title">E-commerce Website</div>
-                        <div class="project-subtitle">Group Project &bull; 2020</div>
-                        <div class="language-icons">
-                            <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-                            <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-                            <img alt="JavaScript"
-                                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+                    <a href="e-commerce-website.html"> 
+                        <div id="project-card" class="card3">
+                            <div class="project-title">E-commerce Website</div>
+                            <div class="project-subtitle">Group Project &bull; 2020</div>
+                            <div class="language-icons">
+                                <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                                <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+                                <img alt="JavaScript"
+                                    src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+                            </div>
+                            <div class="description">
+                                <p>A group website project that sells clothes.</p>
+                            </div>
                         </div>
-                        <div class="description">
-                            <p>A group website project that sells clothes.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -180,10 +176,12 @@
             </div>
         </div>
     </section>
-    <section id="event" style="margin-top: 50px">
+    <section id="event">
         <div class="container">
-            <h1>Organized Events</h1>
             <div class="row">
+                <div class="col-sm-4">
+                    <h1>Organized Events</h1>
+                </div>
                 <div class="col-sm-4 mx-auto">
                     <div id="project-card" class="card4">
                         <div class="project-title">UNM Virtual Summer Camp</div>
@@ -206,7 +204,7 @@
             </div>
         </div>
     </section>
-    <section id="hackathon" style="margin-top: 50px">
+    <section id="hackathon">
         <div class="container">
             <h1>Hackathons</h1>
             <div class="row">
