@@ -341,6 +341,7 @@ a:hover {
 --------------------------------------------------------------*/
 #work {
     padding-top: 60px;
+    padding-bottom: 20px;
     /**
     background: #eaa3a0;
     background: -webkit-linear-gradient(bottom left, #EEC0C6 0%, #E58C8A 100%);
@@ -353,6 +354,7 @@ a:hover {
 
 #event {
     padding-top: 60px;
+    padding-bottom: 20px;
     background: #ffd3cc;
     /**
     background: -webkit-linear-gradient(bottom left, #D7E9E6 0%, #79AEA3 100%);
@@ -372,6 +374,7 @@ a:hover {
 
 #hackathon {
     padding-top: 60px;
+    padding-bottom: 20px;
     background: #49769e;
     /**
     background: -webkit-linear-gradient(bottom left, #A4BFEF 0%, #396184 100%);
