@@ -339,7 +339,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Project Card
 --------------------------------------------------------------*/
-#work {
+#project {
     padding-top: 60px;
     padding-bottom: 20px;
     /**
@@ -352,9 +352,9 @@ a:hover {
 
 }
 
-#event {
-    padding-top: 60px;
-    padding-bottom: 20px;
+#experience {
+    padding-top: 80px;
+    padding-bottom: 40px;
     background: #ffd3cc;
     /**
     background: -webkit-linear-gradient(bottom left, #D7E9E6 0%, #79AEA3 100%);
@@ -365,7 +365,7 @@ a:hover {
     opacity: 0.9;
 }
 
-#event h1 {
+#experience h1 {
     text-align: left;
     margin-top: 15%;
     margin-left: 10%;
@@ -373,8 +373,8 @@ a:hover {
 }
 
 #hackathon {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     background: #49769e;
     /**
     background: -webkit-linear-gradient(bottom left, #A4BFEF 0%, #396184 100%);
@@ -385,6 +385,10 @@ a:hover {
     opacity: 0.9;
 }
 
+#award {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
 
 #project-card {
     position: relative;
@@ -420,7 +424,7 @@ a:hover {
 #project-card:hover .description {
     visibility: visible;
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 15px;
     transition-delay: 0.3s;
 }
 
