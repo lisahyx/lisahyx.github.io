@@ -72,6 +72,26 @@ a:hover {
     transition: all 0.4s ease;
 }
 
+@media only screen and (max-width: 800px) {
+    .navbar {
+        height: 35px;
+    }
+
+    #header {
+        max-height: 20px;
+    }
+    
+    #header .logo {
+        font-size: 20px;
+    }
+    
+    #header.header-scrolled {
+        max-height: 50px;
+        background: rgba(149, 52, 43, 0.9);
+        padding: 0;
+    }
+}
+
 .navbar ul {
     margin: 0;
     padding: 0;
@@ -130,13 +150,6 @@ a:hover {
 .navbar li:hover>a {
     color: #fff;
 }
-
-
-
-
-
-
-
 
 .bg-image {
     background-repeat: no-repeat;
@@ -325,6 +338,54 @@ a:hover {
     align-items: flex-end;
     top: 8%;
     right: 8%;
+}
+
+@media only screen and (max-width: 800px) {
+    .profile .about {
+        width: 70%;
+        height: 70%;
+        flex-direction: column;
+        align-items: flex-end;
+        top: 20%;
+        right: 2%;
+    }
+
+    #gitstats{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .profile .about {
+        width: 60%;
+        height: 60%;
+        flex-direction: column;
+        align-items: flex-end;
+        top: 20%;
+        right: 2%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #frame {
+        height: 110vh;
+    }
+
+    .profile .about {
+        top: 62%;
+        right: 26%;
+        width: 100%;
+    }
+
+    #gitstats {
+        width: 70%;
+        height: 80%;
+    }
+
+    .profile .about p {
+        visibility: hidden;
+    }
 }
 
 .profile .about p {
